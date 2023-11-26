@@ -1,0 +1,1 @@
+MONGO="mongodb://subhi:subhi@cluster0.dyxhr52.mongodb.net/?retryWrites=true&w=majority"
