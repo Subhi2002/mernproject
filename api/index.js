@@ -3,6 +3,7 @@ import mongoose, { mongo } from 'mongoose';
 import dotenv from 'dotenv';
 import userRouter from './routes/user.route.js';
 import authRouter from './routes/auth.route.js';
+import cookieParser from 'cookie-parser';
 dotenv.config();
 const mongoURI = process.env.MONGO;
 mongoose.connect("mongodb+srv://subhi:subhi@cluster0.dyxhr52.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }).then(()=>{
@@ -10,6 +11,7 @@ mongoose.connect("mongodb+srv://subhi:subhi@cluster0.dyxhr52.mongodb.net/?retryW
 }).catch((err) =>{console.log(err);} );
 const app = express();
 app.use(express.json());
+app.use(cookieParser());
 
 app.listen(3000 , () =>{
  console.log('Server running on port 3000.....')
