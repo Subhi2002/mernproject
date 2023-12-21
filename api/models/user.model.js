@@ -18,7 +18,7 @@ const userSchema = new mongoose.Schema(
     },
     avatar:{
       type: String,
-      default: "https://www.shutterstock.com/image-vector/vector-flat-illustration-grayscale-avatar-user-2264922221"
+      default: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.peakpx.com%2Fen%2Fhd-wallpaper-desktop-wncoi&psig=AOvVaw3ZPk1N-etVEhkb2g8EjUSm&ust=1702004538811000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCIDLp5Sr_IIDFQAAAAAdAAAAABAE"
     },
    
   },
